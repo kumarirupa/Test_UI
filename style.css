@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+header {
+  background: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  object-fit: scale-down;
+}
+
+.container {
+  margin: 0px 130px;
+}
+.progress_bar_container {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0px;
+  background: #fff;
+  box-shadow: 0px 1px 20px 0px rgba(213, 213, 234, 0.7);
+}
+
+footer .container {
+  margin: 0px 170px;
+}
+
+.primary_button {
+  color: #fff;
+  width: 25rem;
+  padding: 11px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 34px;
+  background: #00b1f2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.inner_container {
+  margin: 0px 40px;
+}
+.application_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_section {
+  background: #fff;
+  margin-top: 50px;
+  padding-bottom: 10.625rem;
+}
+.status_section {
+  padding: 22px 0px;
+}
+
+.status_section .status_text {
+  color: #2d2d2d;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.application_section {
+  background: #f2f7fd;
+  position: relative;
+}
+
+.application_box span:nth-child(1) {
+  color: #8a8a96;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.application_box span:nth-child(2) {
+  color: #2d2d2d;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.application_section .inner_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.application_section .inner_container img {
+  position: relative;
+  right: 0;
+  margin-top: -18px;
+  width: 181.667px;
+  height: 100px;
+}
+
+.progress_section {
+  padding: 40px 0px;
+}
+
+.progress_section .inner_container {
+  padding: 40px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 1px 20px 0px rgba(213, 213, 234, 0.7);
+}
+
+.progress_bar {
+  display: flex;
+  padding: 10px 0px;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.line {
+  width: calc(100% - 25%);
+  height: 0;
+  position: absolute;
+  left: 12.5%;
+  border: 1px solid rgb(221, 219, 219);
+}
+
+.moving_line {
+  width: 0%;
+  height: 0px;
+  position: absolute;
+  left: 12.5%;
+  border: 1px solid #56b793;
+  transition: 2s;
+}
+
+.progress_details {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 20px;
+}
+
+.status_dot {
+  flex: 25%;
+  text-align: center;
+  height: 25px;
+  z-index: 0;
+}
+
+.status_dot img {
+  height: 25px;
+}
+
+.progress_details .item {
+  /* padding: 10px 40px; */
+  flex: 25%;
+}
+
+.item .title {
+  color: #8a8a96;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 20px 0px;
+}
+.status_desc {
+  color: #2d2d2d;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: start;
+}
+
+@media only screen and (min-width: 600px) {
+  .desktop_hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0px 17px !important;
+  }
+  header {
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .main_section {
+    margin: 0px;
+  }
+  .inner_container {
+    margin: 0px 17px;
+  }
+  .progress_bar_container {
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    padding: 40px 0px;
+    background: #f2f7fd !important;
+  }
+  .status_section .status_text {
+    color: #2d2d2d;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .application_box span:nth-child(2) {
+    font-size: 16px;
+  }
+  .progress_details {
+    flex-direction: column;
+    height: 100vh;
+    gap: unset;
+    padding: unset;
+  }
+
+  .application_section .inner_container {
+    padding: 20px 0px;
+  }
+
+  .progress_bar {
+    flex-direction: column;
+    padding: 10px 0 0 0;
+  }
+
+  .line {
+    height: calc(100% - 25%);
+    width: 0;
+    left: auto;
+  }
+  .progress_section .inner_container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .moving_line {
+    height: 0%;
+    width: 0px !important;
+    left: auto;
+  }
+  .primary_button {
+    width: 100%;
+    font-size: 16px;
+    padding: 17px 0px;
+  }
+  .back_to_home_link {
+    text-align: center;
+    display: block;
+    color: #00b1f2;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-top: 40px;
+  }
+  .mobile_hide {
+    display: none;
+  }
+
+  .progress_details .item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+
+  .card_benefit {
+    background: url("https://img.freepik.com/free-vector/white-background-gradient-modern-abstract-design-wave_343694-2337.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 10px 50px 10px;
+    margin-top: -40px;
+    border-radius: 12px;
+  }
+
+  .card_benefit .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 1px 50px 0px rgba(138, 138, 150, 0.25);
+    backdrop-filter: blur(1px);
+    padding: 16px 20px;
+  }
+
+  .card_benefit .title {
+    color: #00b1f2;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+  }
+
+  .card_benefit .desc {
+    text-align: start;
+    color: #2d2d2d;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .mobile_margin_zero {
+    margin: 0px !important;
+  }
+}
