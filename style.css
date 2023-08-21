@@ -215,6 +215,7 @@ footer .container {
     flex-direction: row;
   }
   footer {
+    position: static;
     padding: 40px 0px;
     background: #f2f7fd !important;
   }
@@ -295,7 +296,6 @@ footer .container {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 10px 50px 10px;
-    margin-top: -40px;
     border-radius: 12px;
   }
 
@@ -331,5 +331,8 @@ footer .container {
   }
   .mobile_margin_zero {
     margin: 0px !important;
+  }
+  .main_section {
+    padding-bottom: 1.625rem;
   }
 }
